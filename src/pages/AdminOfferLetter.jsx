@@ -85,7 +85,7 @@ Please indicate your acceptance of this offer by signing below.`,
     
     try {
       const { token } = JSON.parse(adminInfo);
-      const response = await fetch('http://localhost:5173/api/offer-letter/create', {
+      const response = await fetch('https://salary-slip-offer-letter-generator-frontend.vercel.app/api/offer-letter/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

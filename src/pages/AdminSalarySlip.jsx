@@ -108,7 +108,7 @@ const AdminSalarySlip = () => {
       console.log('Submitting salary data:', salaryData); // Debug log
 
       const response = await axios.post(
-        'http://localhost:5173/api/salary-slips',
+        'https://salary-slip-offer-letter-generator-frontend.vercel.app/api/salary-slips',
         salaryData,
         {
           headers: {
