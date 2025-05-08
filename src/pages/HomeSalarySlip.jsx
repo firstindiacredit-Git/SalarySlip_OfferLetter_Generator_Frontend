@@ -52,7 +52,7 @@ const HomeSalarySlip = () => {
         return;
       }
       
-      const response = await fetch(`http://localhost:5000/api/salary-slips/employee/${employeeInfo.employeeId}`, {
+      const response = await fetch(`https://salary-slip-offer-letter-generator-backend.vercel.app/api/salary-slips/employee/${employeeInfo.employeeId}`, {
         headers: {
           'Authorization': `Bearer ${employeeInfo.token}`,
           'Content-Type': 'application/json'

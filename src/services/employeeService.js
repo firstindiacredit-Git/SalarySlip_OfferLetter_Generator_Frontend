@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/employees';
+const API_URL = 'https://salary-slip-offer-letter-generator-backend.vercel.app/api/employees';
 
 // Create axios instance with auth header
 const getAuthHeader = () => {
