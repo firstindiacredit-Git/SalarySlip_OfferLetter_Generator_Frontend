@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://salary-slip-offer-letter-generator-frontend.vercel.app/api/auth';
+const API_URL = 'https://salary-slip-offer-letter-generator-backend.vercel.app/api/auth';
 
 // Create axios instance with default config
 const axiosInstance = axios.create({
