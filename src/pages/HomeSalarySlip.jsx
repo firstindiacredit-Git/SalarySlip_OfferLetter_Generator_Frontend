@@ -52,7 +52,7 @@ const HomeSalarySlip = () => {
         return;
       }
       
-      const response = await fetch(`https://salary-slip-offer-letter-generator-backend.vercel.app/api/salary-slips/employee/${employeeInfo.employeeId}`, {
+      const response = await fetch(`http://localhost:5173/api/salary-slips/employee/${employeeInfo.employeeId}`, {
         headers: {
           'Authorization': `Bearer ${employeeInfo.token}`,
           'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ const HomeSalarySlip = () => {
     
     try {
       const employeeInfo = JSON.parse(localStorage.getItem('employeeInfo'));
-      const response = await fetch("https://salary-slip-offer-letter-generator-backend.vercel.app/api/employees/salary-slip", {
+      const response = await fetch("http://localhost:5173/api/employees/salary-slip", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
